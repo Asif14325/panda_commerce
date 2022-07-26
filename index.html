@@ -1,15 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <p>hello</p>
+    <!-- nav section -->
+    <nav class="navbar navbar-expand-lg bg-light w-75 m-auto p-2 ">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <img src="images/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shoes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Backpack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <!-- carousel section -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+
+        <div class="carousel-inner w-75 mx-auto rounded">
+            <div class="carousel-item active bg-color-carousel">
+
+                <div class="row p-4">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                        <h2>X-Box for your living room</h2>
+                        <p>This is the best xbox in the world for people who just want to waste time in front of
+                            funky
+                            world.</p>
+                        <h1>$600</h1>
+                        <button class="btn btn-color w-25 sm-w-50">Buy Now</button>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img class="img-fluid" src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                    </div>
+
+                </div>
+            </div>
+            <div class=" carousel-item bg-color-carousel">
+                <div class=" row p-4">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                        <h2>Cool Dude headphone</h2>
+                        <p>This is the best xbox in the world for people who just want to waste time in front of
+                            funky
+                            world.</p>
+                        <h1>$420</h1>
+                        <button class="btn btn-color w-25 sm-w-50">Buy Now</button>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img class="img-fluid" src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                    </div>
+
+                </div>
+            </div>
+            <div class=" carousel-item bg-color-carousel">
+                <div class=" row p-4">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                        <h2>Cool Dude headphone</h2>
+                        <p>This is the best xbox in the world for people who just want to waste time in front of
+                            funky
+                            world.</p>
+                        <h1>$420</h1>
+                        <button class="btn btn-color w-25 sm-w-50">Buy Now</button>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img class="img-fluid" src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- categories-section -->
+
+    <div class="w-75 mx-auto text-center  mt-5">
+        <div class="row gx-5">
+            <div class="col-12 col-lg-4 ">
+                <div
+                    class="p-4 border bg-warning text-light h-75 rounded d-flex justify-content-center align-items-center">
+                    <h1>Watch</h1>
+                    <img class="img-fluid ms-5 w-25 " src="images/categories/watch.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div
+                    class="p-4 border bg-success text-light h-75 rounded d-flex justify-content-center align-items-center">
+                    <h1>Shoe</h1>
+                    <img class="img-fluid ms-5 w-25 " src="images/categories/shoes.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div
+                    class="p-4 border bg-primary text-light h-75 rounded d-flex justify-content-center align-items-center">
+                    <h1>Bag</h1>
+                    <img class="img-fluid ms-5 w-25 " src="images/categories/bag.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shoes -->
+    <h1 class="w-75 mx-auto">Shoes</h1>
+    <div class="w-75 mx-auto ">
+        <div class="row ">
+            <div class="col-12 col-lg-4 ">
+                <div class=" shadow-lg rounded p-3">
+                    <img class="img-fluid" src="images/shoes/shoe-1.png" alt="">
+                    <h3>Supply</h3>
+                    <h1>$160</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam aut explicabo enim
+                        perspiciatis numquam illum, rerum temporibus natus molestias.</p>
+                    <button class="btn btn-color mt-5">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 ">
+                <div class=" shadow-lg rounded p-3">
+                    <img class="img-fluid" src="images/shoes/shoe-2.png" alt="">
+                    <h3>Supply</h3>
+                    <h1>$160</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam sunt dolorem officiis blanditiis
+                        beatae incidunt, reprehenderit odit tenetur perferendis sint?</p>
+                    <button class="btn btn-color mt-5">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 ">
+                <div class="shadow-lg rounded p-3">
+                    <img class="img-fluid" src="images/shoes/shoe-3.png" alt="">
+                    <h3>Supply</h3>
+                    <h1>$160</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, odit earum deserunt at eius
+                        reprehenderit et quod similique assumenda nobis?</p>
+                    <button class="btn btn-color mt-5">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

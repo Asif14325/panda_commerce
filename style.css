@@ -1,12 +1,12 @@
-body {
-    margin: 0;
-    padding: 0;
+.panda-bg-color {
+    background-color: #FCEAE8;
 }
 
-.nature {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+.bg-color-carousel {
+    background-color: #FCEAE8;
+}
+
+.btn-color {
+    background-color: #FF4F95;
+
 }
